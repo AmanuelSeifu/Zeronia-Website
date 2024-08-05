@@ -7,22 +7,29 @@
     background-color: #3A3B3C;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    justify-content: left;
     color: white;
 }
 
-.snowstorm-kraft {
-    font-family: 'snowstorm-kraft', sans-serif;
+.main-flex {
+    display: flex;
+}
+
+.snowstorm {
+    font-family: 'snowstorm', sans-serif;
+}
+
+.tabs span {
+    font-family: 'snowstorm', sans-serif;
+    padding: 5%;
+    align-items: center;
 }
 
 .zeronia-logo {
-    position: absolute;
-    top: 3%;
-    left: 2%;
+    position: relative;
     height: 10vmin;
+    padding-left: 1%;
+    padding-top: 1.5%;
     /*Have this route back to the home page*/
     pointer-events: none;
     display: flex;
@@ -33,16 +40,17 @@
 #logo-picture {
     flex: 0 0 auto;
     margin-right: 20px;
+    size: 100%;
 }
 
 #logo-text {
     display: flex;
     align-items: center;
-    font-size: 250%;
+    font-size: 500%;
 }
 
 /*Rules*/
-    @font-face {
-    font-family: 'snowstorm-kraft';
-    src: url('fonts/snowstorm kraft.otf') format('opentype');
+@font-face {
+    font-family: 'snowstorm';
+    src: url('fonts/snowstorm.otf') format('opentype');
 }
