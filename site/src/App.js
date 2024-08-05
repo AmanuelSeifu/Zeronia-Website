@@ -18,18 +18,17 @@ function GamePage({thumbnail, info, links, descList}) {
     <div>
       <h1>{info["name"]}</h1>
       <img src={thumbnail} alt="thumbnail"/>
+      {gameList}
     </div>
   );
 }
 
 function Home() {
   return (
-    <div className="App">
-      <div className="App-header">
-        <div className="zeronia-logo">
-          <img id="logo-picture" src="/pngs/zeronialogo-2021.png" alt="logo"/>
-          <span className="snowstorm" id="logo-text">Zeronia</span>
-        </div>
+    <div className="App-header">
+      <div className="header">
+        <img id="logo-picture" src="/pngs/zeronialogo-2021.png" alt="logo"/>
+        <span className="snowstorm" id="logo-text">Zeronia</span>
         <div className="tabs">
           <span>Home</span>
           <span>Announcements</span>

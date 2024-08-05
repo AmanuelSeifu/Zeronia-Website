@@ -1,14 +1,17 @@
 /*Class Values*/
-.App {
-    text-align: left;
-}
-  
 .App-header {
     background-color: #3A3B3C;
     min-height: 100vh;
+}
+
+.header {
+    position: relative;
+    padding-top: 35px;
+    /*Have this route back to the home page*/
+    pointer-events: none;
     display: flex;
-    justify-content: left;
-    color: white;
+    justify-content: center;
+    size: 100%;
 }
 
 .main-flex {
@@ -17,36 +20,36 @@
 
 .snowstorm {
     font-family: 'snowstorm', sans-serif;
+    align-items: right;
 }
 
-.tabs span {
+.header .tabs span:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.header .tabs span {
     font-family: 'snowstorm', sans-serif;
-    padding: 5%;
-    align-items: center;
+    font-size: 32px;
+    padding-left: 10vw;
+    transition: transform 0.3s ease;
 }
 
-.zeronia-logo {
-    position: relative;
-    height: 10vmin;
-    padding-left: 1%;
-    padding-top: 1.5%;
-    /*Have this route back to the home page*/
-    pointer-events: none;
-    display: flex;
-    align-items: center;
+.tabs {
+    padding-top: 45px;
+    size: 100%;
 }
 
 /*ID values*/
 #logo-picture {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    size: 100%;
+    size: 10vw;
 }
 
 #logo-text {
     display: flex;
     align-items: center;
-    font-size: 500%;
+    font-size: 80px;
+    padding-left: 20px;
 }
 
 /*Rules*/
